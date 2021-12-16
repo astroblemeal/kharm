@@ -1,0 +1,54 @@
+.blueRadient {
+  background: var(--gradient-blue-right) !important;
+  padding: 0.5em 2em !important;
+  border: none !important;
+  border-radius: 100px !important;
+  color: var(--white) !important;
+  font-weight: 100 !important;
+  font-size: 1rem !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+}
+.blueRadient:hover,
+.blueRadient:active {
+  background: var(--gradient-blue-ghost-right) !important;
+}
+
+.white {
+  background: white !important;
+  padding: 0.5em 2em !important;
+  border: none !important;
+  border-radius: 100px !important;
+  color: var(--blue-dark) !important;
+  font-weight: 100 !important;
+  font-size: 1rem !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+}
+.white:hover,
+.white:active {
+  background: var(--gradient-blue-ghost-right) !important;
+  color: var(--white) !important;
+}
+
+.joinSess,
+.unjoinSess {
+  height: 3.5rem !important;
+  width: 4rem !important;
+  background: white !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+}
+.joinSess:hover,
+.joinSess:active,
+.unjoinSess:hover,
+.unjoinSess:active {
+  background: var(--white-ghost) !important;
+  color: var(--white) !important;
+}
+.joinSess {
+  color: var(--green-olive) !important;
+}
+.unjoinSess {
+  color: var(--red) !important;
+}

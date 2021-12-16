@@ -1,0 +1,72 @@
+@font-face {
+  src: url("/assets/fonts/VCR_OSD_MONO_1.001.ttf");
+  font-family: PIXELS;
+}
+
+:root {
+  --white: rgb(245, 245, 245);
+  --white-ghost: rgba(245, 245, 245, 0.5);
+  --black: rgb(10, 10, 10);
+  --black-ghost: rgba(10, 10, 10, 0.5);
+  --red: rgb(212, 68, 68);
+  --orange: rgb(246, 192, 142);
+  --beige: rgb(255, 241, 242);
+  --green-olive: rgb(133, 141, 106);
+
+  --blue-light: rgb(142, 189, 217);
+  --blue-dark: rgb(74, 57, 115);
+  --blue-dark-ghost: rgba(74, 57, 115, 0.5);
+  --blue-darker: rgb(52, 38, 77);
+  --blue-darker-ghost: rgba(52, 38, 77, 0.5);
+
+  --gradient-blue-bottom: linear-gradient(to bottom, var(--blue-dark), var(--blue-darker));
+  --gradient-blue-right: linear-gradient(to right, var(--blue-dark), var(--blue-darker));
+  --gradient-blue-right-2x: linear-gradient(to right, var(--blue-dark) 50%, var(--blue-darker));
+  --gradient-blue-left: linear-gradient(to left, var(--blue-dark), var(--blue-darker));
+  --gradient-blue-left-2x: linear-gradient(to left, var(--blue-dark) 50%, var(--blue-darker));
+  --gradient-blue-ghost-right: linear-gradient(
+    to right,
+    var(--blue-dark-ghost),
+    var(--blue-darker-ghost)
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--beige);
+  color: var(--black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+/*
+  .scroll::-webkit-scrollbar-track {}
+  .scroll::-webkit-scrollbar-button {}
+  .scroll::-webkit-scrollbar-thumb {} 
+*/
+
+button[disabled] {
+  opacity: 0.3 !important;
+}

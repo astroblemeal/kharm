@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lionBg {
+  flex: 1;
+  background: var(--gradient-blue-right);
+}
+.lionFg {
+  background: var(--beige);
+  border-radius: 0 0 100px 0;
+}
+.lionWrap {
+  min-height: 300px;
+  background: url("/svg/BG_Tower.svg") no-repeat;
+  background-position-x: calc(100% - -75vw);
+  background-position-y: 25%;
+  background-size: 50rem;
+  border-radius: 0 0 100px 0;
+  color: var(--black);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lionWrap svg {
+  width: 150px;
+  height: 150px;
+  fill: var(--black);
+}
+
+.owlBg {
+  flex: 1;
+  background: var(--beige);
+}
+.owlFg {
+  background: var(--gradient-blue-right);
+  border-radius: 100px 0 0 0;
+}
+.owlWrap {
+  min-height: 300px;
+  background: url("/svg/BG_Tribune.svg") no-repeat;
+  background-position-x: -75vw;
+  background-position-y: 60%;
+  background-size: 50rem;
+  border-radius: 100px 0 0 0;
+  color: var(--white);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.owlWrap svg {
+  width: 150px;
+  height: 150px;
+  fill: var(--white);
+}
+
+@media only screen and (min-width: 400px) {
+  .lionWrap {
+    background-position-x: calc(100% - -55vw);
+  }
+  .owlWrap {
+    background-position-x: -55vw;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .lionWrap {
+    background-position-x: calc(100% - -42vw);
+  }
+  .owlWrap {
+    background-position-x: -42vw;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .lionWrap {
+    background-position-x: calc(100% - -35vw);
+  }
+  .owlWrap {
+    background-position-x: -35vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .lionWrap {
+    background-position-x: calc(100% - -25vw);
+  }
+  .owlWrap {
+    background-position-x: -25vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lionWrap {
+    background-position-x: calc(100% - -15vw);
+  }
+  .owlWrap {
+    background-position-x: -15vw;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .lionWrap {
+    background-position-x: calc(100% - -10vw);
+  }
+  .owlWrap {
+    background-position-x: -10vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lionBg {
+    background: var(--gradient-blue-left);
+  }
+
+  .lionWrap,
+  .owlWrap {
+    min-height: 500px;
+  }
+}

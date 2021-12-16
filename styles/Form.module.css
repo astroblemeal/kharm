@@ -1,0 +1,39 @@
+.form {
+  width: 420px;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 11px;
+  font-size: 1.75rem;
+  text-align: left;
+  color: var(--blue-darker);
+}
+
+.inp {
+  width: 100%;
+  margin: 5px 0 !important;
+}
+.inp div,
+.inp input,
+.inp fieldset {
+  border-radius: 18px;
+}
+
+.btnWrap {
+  width: 100%;
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 42%;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 70vw;
+  }
+}

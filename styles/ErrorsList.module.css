@@ -1,0 +1,10 @@
+.ul {
+  width: 100%;
+  list-style: disc;
+  margin: 0.5rem auto 0.5rem 1.5rem;
+}
+
+.li {
+  color: var(--red);
+  font-size: 0.9rem;
+}

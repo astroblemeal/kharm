@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  min-height: 30vh;
+  background: var(--gradient-blue-right);
+  display: flex;
+  flex-direction: column;
+}
+
+.sideElem {
+  height: 75vh;
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gradient-blue-left);
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0 0 3px 1px var(--blue-light);
+  position: fixed;
+  top: 7vh;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.arrowBtnWrap {
+  height: 1vh;
+  width: 95vw;
+  position: relative;
+}
+.arrowBtn {
+  background: var(--blue-light) !important;
+  position: absolute !important;
+  top: 150px !important;
+  z-index: 1;
+}
+.closed {
+  left: -97%;
+}
+.closed .arrowBtn {
+  right: -10% !important;
+}
+.open {
+  left: 0;
+}
+.open .arrowBtn {
+  right: -5% !important;
+}
+
+.sessionsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin-top: 15px !important;
+}
+.search * {
+  color: var(--beige) !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+}
+
+.title {
+  margin-top: 20px;
+  color: var(--beige);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.noSession {
+  margin-top: 20px;
+  color: var(--beige);
+}
+
+.session {
+  width: 95vw;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session table {
+  width: 75%;
+  border-collapse: collapse;
+}
+.session tr {
+  display: flex;
+  align-items: center;
+}
+.session th,
+.session td {
+  color: var(--beige);
+  text-align: left;
+}
+.session .row1 th,
+.session .row3 td {
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+.session .row2 td {
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.session .row3 td {
+  display: flex;
+  align-items: center;
+}
+.session .row3 svg {
+  margin-right: 10px;
+}
+.session th:nth-child(1n),
+.session td:nth-child(1n) {
+  flex: 0.25;
+}
+.session th:nth-child(2n),
+.session td:nth-child(2n) {
+  flex: 0.75;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    min-height: 42vh;
+    background: var(--gradient-blue-right-2x);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sessionsWrapper {
+    flex: 1;
+  }
+
+  .session {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .bookedWrapper,
+  .sessionsWrapper {
+    flex: 0.4;
+  }
+}
